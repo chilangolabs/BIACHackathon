@@ -2,12 +2,14 @@
 
 var express = require('express');
 var kraken = require('kraken-js');
+var mongoLib = require('./lib/mongo');
 
 var options;
 var app;
 
 options = {
   onconfig: function(config, next) {
+    mongoLib(config.get('mongodb:url'));
     next(null, config);
   }
 };
