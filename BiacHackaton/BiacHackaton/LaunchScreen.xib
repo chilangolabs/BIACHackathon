@@ -10,7 +10,31 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="Egr-h3-Gep">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash" translatesAutoresizingMaskIntoConstraints="NO" id="ZEh-sD-IMn">
+                    <rect key="frame" x="220" y="180" width="160" height="240"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="240" id="OfD-1x-xog"/>
+                        <constraint firstAttribute="width" constant="160" id="XOv-6X-IBk"/>
+                    </constraints>
+                </imageView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Egr-h3-Gep" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="I3j-0A-Lzj"/>
+                <constraint firstAttribute="bottom" secondItem="Egr-h3-Gep" secondAttribute="bottom" id="JBV-4o-Rxa"/>
+                <constraint firstAttribute="trailing" secondItem="Egr-h3-Gep" secondAttribute="trailing" id="SM8-OJ-y93"/>
+                <constraint firstItem="ZEh-sD-IMn" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Zpx-Ha-qWm"/>
+                <constraint firstItem="Egr-h3-Gep" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lq8-I4-hzd"/>
+                <constraint firstItem="ZEh-sD-IMn" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="uVc-cz-4MX"/>
+            </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="Background" width="375" height="667"/>
+        <image name="Splash" width="246" height="353"/>
+    </resources>
 </document>

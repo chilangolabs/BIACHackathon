@@ -14,6 +14,7 @@ class InitViewController: UIViewController {
     super.viewDidLoad()
     
     // Do any additional setup after loading the view.
+    self.navigationController?.setNavigationBarHidden(true, animated: true)
   }
   
   override func didReceiveMemoryWarning() {
@@ -23,6 +24,6 @@ class InitViewController: UIViewController {
   
   @IBAction func registerAction() {
     let registerViewController = RegisterViewController(nibName: "RegisterViewController", bundle: nil)
-    self.navigationController?.pushViewController(registerViewController, animated: true)
+    self.navigationController?.presentViewController(registerViewController, animated: true, completion: nil)
   }
 }

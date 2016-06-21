@@ -15,20 +15,60 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gr-pj-qdj">
-                    <rect key="frame" x="23" y="518" width="86" height="30"/>
-                    <state key="normal" title="Inicia Sesión"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="mVp-FP-8LG">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash" translatesAutoresizingMaskIntoConstraints="NO" id="lRn-oC-Fv5">
+                    <rect key="frame" x="80" y="144" width="160" height="240"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="g0z-KO-4Uj"/>
+                        <constraint firstAttribute="height" constant="240" id="vmV-5Z-jUP"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gr-pj-qdj">
+                    <rect key="frame" x="20" y="508" width="127.5" height="40"/>
+                    <color key="backgroundColor" red="0.95686274509803915" green="0.2627450980392157" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="uqH-Ff-Tgp"/>
+                    </constraints>
+                    <state key="normal" title="Inicia Sesión">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mIr-11-8bK">
-                    <rect key="frame" x="232" y="518" width="70" height="30"/>
-                    <state key="normal" title="Regístrate"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mIr-11-8bK">
+                    <rect key="frame" x="172.5" y="508" width="127.5" height="40"/>
+                    <color key="backgroundColor" red="0.95686274509803915" green="0.2627450980392157" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="c5z-te-nsP"/>
+                    </constraints>
+                    <state key="normal" title="Regístrate">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
                     <connections>
                         <action selector="registerAction" destination="-1" eventType="touchUpInside" id="SiC-Yq-Foq"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="mIr-11-8bK" secondAttribute="trailing" constant="20" id="3p2-dE-z2m"/>
+                <constraint firstAttribute="bottom" secondItem="mIr-11-8bK" secondAttribute="bottom" constant="20" id="512-ez-jMG"/>
+                <constraint firstItem="lRn-oC-Fv5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="B3O-7C-Q95"/>
+                <constraint firstAttribute="bottom" secondItem="mVp-FP-8LG" secondAttribute="bottom" id="G7P-KH-WUK"/>
+                <constraint firstItem="mVp-FP-8LG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LOi-jr-lBk"/>
+                <constraint firstItem="lRn-oC-Fv5" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-20" id="d71-nD-agF"/>
+                <constraint firstItem="mIr-11-8bK" firstAttribute="width" secondItem="8gr-pj-qdj" secondAttribute="width" id="eDe-BP-KHO"/>
+                <constraint firstItem="mIr-11-8bK" firstAttribute="leading" secondItem="8gr-pj-qdj" secondAttribute="trailing" constant="25" id="eyM-q3-5Yx"/>
+                <constraint firstItem="mVp-FP-8LG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kUU-yR-3Ku"/>
+                <constraint firstAttribute="trailing" secondItem="mVp-FP-8LG" secondAttribute="trailing" id="l8Y-nL-5GB"/>
+                <constraint firstItem="8gr-pj-qdj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="m0s-32-ZNO"/>
+                <constraint firstAttribute="bottom" secondItem="8gr-pj-qdj" secondAttribute="bottom" constant="20" id="yYc-td-iLt"/>
+            </constraints>
             <point key="canvasLocation" x="254" y="355"/>
         </view>
     </objects>
+    <resources>
+        <image name="Background" width="375" height="667"/>
+        <image name="Splash" width="246" height="353"/>
+    </resources>
 </document>

@@ -9,18 +9,30 @@
 import UIKit
 
 class RegisterViewController: UIViewController {
+  
+  @IBOutlet weak var viewName: UIView!
+  @IBOutlet weak var viewLastName: UIView!
+  @IBOutlet weak var viewPhone: UIView!
+  @IBOutlet weak var viewEmail: UIView!
+  @IBOutlet weak var viewPassword: UIView!
 
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    let gradient: CAGradientLayer = CAGradientLayer()
-    gradient.frame = view.bounds
-    gradient.colors = [UIColor.whiteColor().CGColor, UIColor.blackColor().CGColor]
-    self.view.layer.insertSublayer(gradient, atIndex: 0)
+    self.styleBorde(self.viewName)
+    self.styleBorde(self.viewLastName)
+    self.styleBorde(self.viewPhone)
+    self.styleBorde(self.viewEmail)
+    self.styleBorde(self.viewPassword)
   }
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
+  }
+  
+  func styleBorde(view: UIView) {
+    view.layer.borderWidth = 1
+    view.layer.borderColor = UIColor(red: 0/255, green: 67/255, blue: 117/255, alpha: 1.0).CGColor /* #004375 */
   }
 }
