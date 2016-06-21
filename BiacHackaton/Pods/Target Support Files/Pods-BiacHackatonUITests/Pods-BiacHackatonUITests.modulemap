@@ -1,0 +1,6 @@
+framework module Pods_BiacHackatonUITests {
+  umbrella header "Pods-BiacHackatonUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
