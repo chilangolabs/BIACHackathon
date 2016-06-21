@@ -16,7 +16,33 @@ var UserModel = function() {
       unique: true
     },
     phone: String,
-    password: String
+    password: String,
+    medicalIds: [
+      {
+        relation: String,
+        birthday: Date,
+        bloodType: {
+          type: String,
+          enum: ['a+', 'a-', 'b+', 'b-', 'ab+', 'ab-', 'o-', 'o+']
+        },
+        height: Number,
+        weight: Number,
+        medications: String,
+        medicalConditions: String,
+        allergies: String,
+        medicalNotes: String
+      }
+    ],
+    medicalHistory: [
+      {
+        diagnostic: String,
+        medication: String,
+        _occurredAt: {
+          type: Date,
+          default: Date.now
+        }
+      }
+    ]
   });
 
   userSchema.pre('save', function(next) {
