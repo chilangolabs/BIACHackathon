@@ -4,6 +4,7 @@
     <string name="baseURL">https://nisi-chilangolabs.rhcloud.com/v1</string>
     <string name="endpoint_register">/auth/signup</string>
     <string name="endpoint_add_medic_card">/users/medicalid</string>
+    <string name="endpoint_emergency">/emergency</string>
     <string name="wait_please">Espere por favor...</string>
 
     <!-- TODO: Remove or change this placeholder text -->

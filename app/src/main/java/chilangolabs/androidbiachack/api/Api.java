@@ -12,7 +12,6 @@ import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 
-import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.util.Map;
@@ -76,7 +75,7 @@ public class Api {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 Map<String, String> headers = new ArrayMap<>();
-                headers.put("token", getToken());
+                headers.put("X-Access-Token", "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU3Njk4YmRhYmE4MGEzMzQxODZlMGE2MCIsImlhdCI6MTQ2NjUzNDg3NSwiZXhwIjoxNDc0MzEwODc1fQ.jYzGbVjumLRkoP6kW2Tln5X9Y2TTVwEmYmGKZVLAETxxqyL47XcVcglSXF1w-Fm14o5Haeywp_G05UkIUQ2SVA");
                 return headers;
             }
         };
@@ -98,7 +97,7 @@ public class Api {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 Map<String, String> headers = new ArrayMap<>();
-                headers.put("token", getToken());
+                headers.put("X-Access-Token", "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU3Njk4YmRhYmE4MGEzMzQxODZlMGE2MCIsImlhdCI6MTQ2NjUzNDg3NSwiZXhwIjoxNDc0MzEwODc1fQ.jYzGbVjumLRkoP6kW2Tln5X9Y2TTVwEmYmGKZVLAETxxqyL47XcVcglSXF1w-Fm14o5Haeywp_G05UkIUQ2SVA");
                 return headers;
             }
         };
@@ -106,7 +105,7 @@ public class Api {
     }
 
     public static void requestAmbulance(final Context ctx, JSONObject jsonUser, final OnRequestListenerListener l) {
-        jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, "", jsonUser, new Response.Listener<JSONObject>() {
+        jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, ctx.getString(R.string.baseURL) + ctx.getString(R.string.endpoint_emergency), jsonUser, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
                 l.OnSucces(response);
@@ -120,8 +119,15 @@ public class Api {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 Map<String, String> headers = new ArrayMap<>();
-                headers.put("token", getToken());
+                headers.put("X-Access-Token", "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU3Njk4YmRhYmE4MGEzMzQxODZlMGE2MCIsImlhdCI6MTQ2NjUzNDg3NSwiZXhwIjoxNDc0MzEwODc1fQ.jYzGbVjumLRkoP6kW2Tln5X9Y2TTVwEmYmGKZVLAETxxqyL47XcVcglSXF1w-Fm14o5Haeywp_G05UkIUQ2SVA");
                 return headers;
+            }
+
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String, String> params = new ArrayMap<>();
+                params.put("X-Access-Token", "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU3Njk4YmRhYmE4MGEzMzQxODZlMGE2MCIsImlhdCI6MTQ2NjUzNDg3NSwiZXhwIjoxNDc0MzEwODc1fQ.jYzGbVjumLRkoP6kW2Tln5X9Y2TTVwEmYmGKZVLAETxxqyL47XcVcglSXF1w-Fm14o5Haeywp_G05UkIUQ2SVA");
+                return params;
             }
         };
         getRequestQueue().add(jsonObjectRequest);

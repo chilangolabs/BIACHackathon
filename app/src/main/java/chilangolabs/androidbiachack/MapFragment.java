@@ -4,10 +4,13 @@ package chilangolabs.androidbiachack;
 import android.location.Location;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Spinner;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.android.volley.VolleyError;
@@ -22,6 +25,9 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import chilangolabs.androidbiachack.api.Api;
 import chilangolabs.androidbiachack.api.OnRequestListenerListener;
 
@@ -31,6 +37,8 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, Locatio
     private GoogleMap googleMap;
     MaterialDialog materialDialog;
     Button btnFrgMapRequest;
+    Spinner spinner;
+    List<String> listParent = new ArrayList<>();
 
     public MapFragment() {
         // Required empty public constructor
@@ -46,7 +54,19 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, Locatio
         mapFragment.getMapAsync(this);
 
         btnFrgMapRequest = (Button) rootView.findViewById(R.id.btnFrgMapRequest);
+        spinner = (Spinner) rootView.findViewById(R.id.spinner);
 
+        listParent.add("Papá");
+        listParent.add("Mamá");
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<>
+                (getActivity(), android.R.layout.simple_spinner_dropdown_item, listParent);
+
+//        dataAdapter.setDropDownViewResource
+//                (android.R.layout.simple_spinner_dropdown_item);
+
+        spinner.setAdapter(dataAdapter);
+
+        Log.e("apitoken------->>", Api.getToken());
         materialDialog = new MaterialDialog.Builder(getActivity())
                 .title("¡Bienvenida Lluvia!")
                 .content("5 minutos es todo lo que se necesita para salvar una vida. Completa tu perfil y ayudate en una emergencia.")
@@ -64,9 +84,12 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, Locatio
                     jsonAmbulance.put("latitud", "20.9875477");
                     jsonAmbulance.put("longitud", "-86.8295603");
                     jsonAmbulance.put("medicalId", "5768db163c66fe6821564c48");
+                    jsonAmbulance.put("phone", "5554053983");
+                    jsonAmbulance.put("phone", "5554053983");
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
+                Log.e("datasend ", jsonAmbulance.toString());
 
                 Api.requestAmbulance(getActivity(), jsonAmbulance, new OnRequestListenerListener() {
                     @Override
@@ -105,7 +128,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, Locatio
     public void onMapReady(GoogleMap googleMap) {
         googleMap.addMarker(new MarkerOptions().position(new LatLng(20.9875477, -86.8295603)).title("Marker"));
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(20.9875477, -86.8295603)));
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(20.9875477, -86.8295603), 13));
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(20.9875477, -86.8295603), 16));
     }
 
     @Override

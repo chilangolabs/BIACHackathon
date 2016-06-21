@@ -90,7 +90,7 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void OnError(VolleyError error) {
                 materialDialog.hide();
-                Log.e("error", new String(error.networkResponse.data) + "");
+//                Log.e("error", new String(error.networkResponse.data) + "");
             }
         });
 

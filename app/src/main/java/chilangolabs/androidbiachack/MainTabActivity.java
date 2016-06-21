@@ -66,7 +66,7 @@ public class MainTabActivity extends AppCompatActivity {
                         toolbar.setSubtitle("Ayuda a los que más amas");
                         break;
                     case 3:
-                        toolbar.setTitle("Configuracion");
+                        toolbar.setTitle("Nuevo Perfil");
 //                        toolbar.setSubtitle("Solicita ayuda de inmediato");
                         break;
                     default:

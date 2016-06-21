@@ -69,7 +69,7 @@ public class PerfilesFragment extends Fragment {
                     "      \"weight\": 80,\n" +
                     "      \"height\": 167,\n" +
                     "      \"bloodType\": \"a+\",\n" +
-                    "      \"relation\": \"self\",\n" +
+                    "      \"relation\": \"Papá\",\n" +
                     "      \"_id\": \"5768db163c66fe6821564c48\"\n" +
                     "    },\n" +
                     "    {\n" +
@@ -80,7 +80,7 @@ public class PerfilesFragment extends Fragment {
                     "      \"weight\": 80,\n" +
                     "      \"height\": 167,\n" +
                     "      \"bloodType\": \"a+\",\n" +
-                    "      \"relation\": \"self\",\n" +
+                    "      \"relation\": \"Mamá\",\n" +
                     "      \"_id\": \"576968b99fe396ae8fcd3e63\"\n" +
                     "    }\n" +
                     "  ]\n" +
