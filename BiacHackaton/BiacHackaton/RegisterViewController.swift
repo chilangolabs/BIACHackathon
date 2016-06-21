@@ -35,4 +35,16 @@ class RegisterViewController: UIViewController {
     view.layer.borderWidth = 1
     view.layer.borderColor = UIColor(red: 0/255, green: 67/255, blue: 117/255, alpha: 1.0).CGColor /* #004375 */
   }
+  
+  @IBAction func registerAction() {
+    let homeViewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
+    let profilesViewController = ProfilesViewController(nibName: "ProfilesViewController", bundle: nil)
+    let firstAidViewController = FirstAidViewController(nibName: "FirstAidViewController", bundle: nil)
+    let settingsViewController = SettingsViewController(nibName: "SettingsViewController", bundle: nil)
+    
+    let tabBarController = UITabBarController()
+    tabBarController.viewControllers = [homeViewController, profilesViewController, firstAidViewController, settingsViewController]
+    
+    UIApplication.sharedApplication().delegate?.window??.rootViewController = tabBarController
+  }
 }

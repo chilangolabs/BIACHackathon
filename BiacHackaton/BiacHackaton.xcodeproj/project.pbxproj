@@ -21,6 +21,12 @@
 		5B49523C1D18EEC500DA69BD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B49523B1D18EEC500DA69BD /* LaunchScreen.xib */; };
 		5B49523F1D1933C100DA69BD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B49523D1D1933C100DA69BD /* HomeViewController.swift */; };
 		5B4952401D1933C100DA69BD /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B49523E1D1933C100DA69BD /* HomeViewController.xib */; };
+		5B4952431D19628300DA69BD /* ProfilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4952411D19628300DA69BD /* ProfilesViewController.swift */; };
+		5B4952441D19628300DA69BD /* ProfilesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B4952421D19628300DA69BD /* ProfilesViewController.xib */; };
+		5B4952471D1962A200DA69BD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4952451D1962A200DA69BD /* SettingsViewController.swift */; };
+		5B4952481D1962A200DA69BD /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B4952461D1962A200DA69BD /* SettingsViewController.xib */; };
+		5B49524B1D1962D100DA69BD /* FirstAidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4952491D1962D100DA69BD /* FirstAidViewController.swift */; };
+		5B49524C1D1962D100DA69BD /* FirstAidViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B49524A1D1962D100DA69BD /* FirstAidViewController.xib */; };
 		7A518ADAEDE4D6E295832E8E /* Pods_BiacHackatonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F38AE630668D508D4F5472E /* Pods_BiacHackatonTests.framework */; };
 		E23E4CE0CCBC3A61D31F6DA1 /* Pods_BiacHackatonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 376F3C3A1326314C190E632A /* Pods_BiacHackatonUITests.framework */; };
 /* End PBXBuildFile section */
@@ -65,6 +71,12 @@
 		5B49523B1D18EEC500DA69BD /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		5B49523D1D1933C100DA69BD /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5B49523E1D1933C100DA69BD /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		5B4952411D19628300DA69BD /* ProfilesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilesViewController.swift; sourceTree = "<group>"; };
+		5B4952421D19628300DA69BD /* ProfilesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfilesViewController.xib; sourceTree = "<group>"; };
+		5B4952451D1962A200DA69BD /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		5B4952461D1962A200DA69BD /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		5B4952491D1962D100DA69BD /* FirstAidViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstAidViewController.swift; sourceTree = "<group>"; };
+		5B49524A1D1962D100DA69BD /* FirstAidViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstAidViewController.xib; sourceTree = "<group>"; };
 		7F38AE630668D508D4F5472E /* Pods_BiacHackatonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BiacHackatonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8DCBA82A83D1E0C7A971F4D /* Pods-BiacHackatonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiacHackatonUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BiacHackatonUITests/Pods-BiacHackatonUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D01C9F91EAF9DC520CAAEF82 /* Pods-BiacHackatonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiacHackatonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BiacHackatonTests/Pods-BiacHackatonTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -161,6 +173,12 @@
 				5B49523B1D18EEC500DA69BD /* LaunchScreen.xib */,
 				5B49523D1D1933C100DA69BD /* HomeViewController.swift */,
 				5B49523E1D1933C100DA69BD /* HomeViewController.xib */,
+				5B4952411D19628300DA69BD /* ProfilesViewController.swift */,
+				5B4952421D19628300DA69BD /* ProfilesViewController.xib */,
+				5B4952451D1962A200DA69BD /* SettingsViewController.swift */,
+				5B4952461D1962A200DA69BD /* SettingsViewController.xib */,
+				5B4952491D1962D100DA69BD /* FirstAidViewController.swift */,
+				5B49524A1D1962D100DA69BD /* FirstAidViewController.xib */,
 			);
 			path = BiacHackaton;
 			sourceTree = "<group>";
@@ -259,6 +277,7 @@
 				TargetAttributes = {
 					5B4951FB1D18BD6200DA69BD = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 29736QQH7E;
 					};
 					5B49520F1D18BD6300DA69BD = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -296,9 +315,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B49523C1D18EEC500DA69BD /* LaunchScreen.xib in Resources */,
+				5B49524C1D1962D100DA69BD /* FirstAidViewController.xib in Resources */,
 				5B4952071D18BD6200DA69BD /* Assets.xcassets in Resources */,
 				5B4952301D18C63E00DA69BD /* RegisterViewController.xib in Resources */,
+				5B4952481D1962A200DA69BD /* SettingsViewController.xib in Resources */,
 				5B4952381D18CBBF00DA69BD /* InitViewController.xib in Resources */,
+				5B4952441D19628300DA69BD /* ProfilesViewController.xib in Resources */,
 				5B4952341D18C64E00DA69BD /* LoginViewController.xib in Resources */,
 				5B4952401D1933C100DA69BD /* HomeViewController.xib in Resources */,
 			);
@@ -450,8 +472,11 @@
 			files = (
 				5B49523F1D1933C100DA69BD /* HomeViewController.swift in Sources */,
 				5B4952331D18C64E00DA69BD /* LoginViewController.swift in Sources */,
+				5B4952471D1962A200DA69BD /* SettingsViewController.swift in Sources */,
 				5B4952001D18BD6200DA69BD /* AppDelegate.swift in Sources */,
+				5B49524B1D1962D100DA69BD /* FirstAidViewController.swift in Sources */,
 				5B4952371D18CBBF00DA69BD /* InitViewController.swift in Sources */,
+				5B4952431D19628300DA69BD /* ProfilesViewController.swift in Sources */,
 				5B49522F1D18C63E00DA69BD /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -576,10 +601,13 @@
 			baseConfigurationReference = 06A6AB6E770F1E4EF76AECFF /* Pods-BiacHackaton.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BiacHackaton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.oecd.BiacHackaton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -588,10 +616,13 @@
 			baseConfigurationReference = 1DB650BFB58118AD2F5E0F7D /* Pods-BiacHackaton.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BiacHackaton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.oecd.BiacHackaton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
