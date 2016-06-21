@@ -18,6 +18,7 @@
         android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
         android:layout_margin="@dimen/activity_horizontal_margin">
 
         <LinearLayout
@@ -48,16 +49,16 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Crea"
                         android:layout_marginBottom="-3dp"
+                        android:text="Crea"
                         android:textColor="@color/bluedark"
                         android:textSize="18sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="tu perfil"
                         android:layout_marginTop="-3dp"
+                        android:text="tu perfil"
                         android:textColor="@color/bluedark"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -115,6 +116,7 @@
                     android:drawableStart="@mipmap/telefono"
                     android:hint="Telefono celular"
                     android:inputType="text"
+                    android:paddingStart="10dp"
                     android:textSize="14sp" />
 
             </android.support.design.widget.TextInputLayout>
@@ -142,9 +144,10 @@
                     android:id="@+id/edtxRegisterPass"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableStart="@mipmap/pass"
+                    android:drawableStart="@mipmap/lock"
                     android:hint="Contraseña"
                     android:inputType="text"
+                    android:paddingStart="13dp"
                     android:textSize="14sp" />
 
             </android.support.design.widget.TextInputLayout>
