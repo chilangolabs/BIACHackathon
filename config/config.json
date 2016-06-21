@@ -6,6 +6,10 @@
       }
     },
 
+    "appsec": {
+      "enabled": false
+    },
+
     "router": {
       "module": {
         "arguments": [{ "directory": "path:./controllers" }]
