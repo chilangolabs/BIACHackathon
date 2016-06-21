@@ -1,2 +1,4 @@
-# BIACHackathon
-Proyecto para el hackathon de BIAC
+biac2016
+===========
+
+API para el hackathon de 2016
