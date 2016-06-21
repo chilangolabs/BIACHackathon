@@ -4,6 +4,10 @@
     "secret": "q6P&@5=,1X:-[TXOKc%F|TJMhNj7g[O.oZ)R`dO<{h)|#xN|Zy&kmej|=|)j9y7!"
   },
 
+  "mongo": {
+    "url": "mongodb://thor:KxcO9Hp7Nr8r@ds025802.mlab.com:25802/emergencia"
+  },
+
   "middleware": {
     "static": {
       "module": {
