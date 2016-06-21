@@ -1,8 +1,8 @@
 package chilangolabs.androidbiachack;
 
 
+import android.location.Location;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,14 +10,23 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.afollestad.materialdialogs.MaterialDialog;
+import com.android.volley.VolleyError;
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.LocationSource;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import org.json.JSONException;
+import org.json.JSONObject;
 
-public class MapFragment extends Fragment implements OnMapReadyCallback {
+import chilangolabs.androidbiachack.api.Api;
+import chilangolabs.androidbiachack.api.OnRequestListenerListener;
+
+
+public class MapFragment extends Fragment implements OnMapReadyCallback, LocationSource.OnLocationChangedListener {
 
     private GoogleMap googleMap;
     MaterialDialog materialDialog;
@@ -27,10 +36,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
         // Required empty public constructor
     }
 
-    @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -50,8 +55,31 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
                 .show();
 
         btnFrgMapRequest.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
+
+                JSONObject jsonAmbulance = new JSONObject();
+                try {
+                    jsonAmbulance.put("latitud", "20.9875477");
+                    jsonAmbulance.put("longitud", "-86.8295603");
+                    jsonAmbulance.put("medicalId", "5768db163c66fe6821564c48");
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+                Api.requestAmbulance(getActivity(), jsonAmbulance, new OnRequestListenerListener() {
+                    @Override
+                    public void OnSucces(JSONObject json) {
+                        super.OnSucces(json);
+                    }
+
+                    @Override
+                    public void OnError(VolleyError error) {
+                        super.OnError(error);
+                    }
+                });
+
                 new MaterialDialog.Builder(getActivity())
                         .title("¿Que hacer en caso de asfixia?")
                         .content("1. Párese detrás de la persona y rodéela con los brazos por la cintura. Para un niño, es posible que deba hincarse.\n" +
@@ -69,11 +97,19 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
             }
         });
 
+
         return rootView;
     }
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        googleMap.addMarker(new MarkerOptions().position(new LatLng(0, 0)).title("Marker"));
+        googleMap.addMarker(new MarkerOptions().position(new LatLng(20.9875477, -86.8295603)).title("Marker"));
+        googleMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(20.9875477, -86.8295603)));
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(20.9875477, -86.8295603), 13));
+    }
+
+    @Override
+    public void onLocationChanged(Location location) {
+//        googleMap.addMarker(new MarkerOptions().position(new LatLng(location.getLatitude(), location.getLongitude())));
     }
 }

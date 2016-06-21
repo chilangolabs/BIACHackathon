@@ -83,10 +83,10 @@ public class Api {
         getRequestQueue().add(jsonObjectRequest);
     }
 
-    public static void getMedicalCards(final Context ctx, JSONArray jsonMedicalCard, final OnRequestListenerListener l) {
-        jsonArrayRequest = new JsonArrayRequest(Request.Method.POST, "", jsonMedicalCard, new Response.Listener<JSONArray>() {
+    public static void getMedicalCards(final Context ctx, JSONObject jsonMedicalCard, final OnRequestListenerListener l) {
+        jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, context.getString(R.string.baseURL) + ctx.getString(R.string.endpoint_add_medic_card), jsonMedicalCard, new Response.Listener<JSONObject>() {
             @Override
-            public void onResponse(JSONArray response) {
+            public void onResponse(JSONObject response) {
                 l.OnSucces(response);
             }
         }, new Response.ErrorListener() {

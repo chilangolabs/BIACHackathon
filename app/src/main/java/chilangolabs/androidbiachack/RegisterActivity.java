@@ -77,7 +77,9 @@ public class RegisterActivity extends AppCompatActivity {
             public void OnSucces(JSONObject json) {
                 super.OnSucces(json);
                 try {
+                    Log.e("json", json.getString("accessToken"));
                     Api.setToken(json.getString("accessToken"));
+                    Log.e("accestoken", Api.getToken());
                     materialDialog.hide();
                     startActivity(new Intent(RegisterActivity.this, MainTabActivity.class));
                 } catch (JSONException e) {
