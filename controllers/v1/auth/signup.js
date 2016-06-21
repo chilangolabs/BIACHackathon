@@ -29,11 +29,36 @@ module.exports = function(router) {
         return next(new errors.ClientError('Usuario ya registrado'));
       }
 
+      /* Fake data */
+      var candidateMedicalId1 = {
+        relation: 'self',
+        bloodType: 'a+',
+        height: 175,
+        weight: 102,
+        medications: 'Clortalidona',
+        medicalConditions: 'Hipertensión, obesidad',
+        allergies: 'Ninguna',
+        medicalNotes: ''
+      };
+
+      var candidateMedicalId2 = {
+        relation: 'mom',
+        bloodType: 'o+',
+        height: 160,
+        weight: 70,
+      };
+
+      var candidateMedicalId3 = {
+      };
+      /* End fake data */
+
       var candidateUser = new User({
         name: name,
         email: email,
         phone: phone,
-        password: password
+        password: password,
+        medicalIds: [candidateMedicalId1, candidateMedicalId2,
+          candidateMedicalId3]
       });
 
       candidateUser.save(function(err, user) {
