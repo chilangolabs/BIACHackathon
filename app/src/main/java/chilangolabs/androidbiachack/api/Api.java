@@ -17,6 +17,8 @@ import org.json.JSONObject;
 
 import java.util.Map;
 
+import chilangolabs.androidbiachack.R;
+
 /**
  * Created by Gorro on 20/06/16.
  */
@@ -45,7 +47,7 @@ public class Api {
     }
 
     public static void registerUser(final Context ctx, JSONObject jsonUser, final OnRequestListenerListener l) {
-        jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, "", jsonUser, new Response.Listener<JSONObject>() {
+        jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, ctx.getString(R.string.baseURL) + ctx.getString(R.string.endpoint_register), jsonUser, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
                 l.OnSucces(response);
@@ -60,7 +62,7 @@ public class Api {
     }
 
     public static void addMedicCard(final Context ctx, JSONObject jsonUser, final OnRequestListenerListener l) {
-        jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, "", jsonUser, new Response.Listener<JSONObject>() {
+        jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, ctx.getString(R.string.baseURL) + ctx.getString(R.string.endpoint_add_medic_card), jsonUser, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
                 l.OnSucces(response);

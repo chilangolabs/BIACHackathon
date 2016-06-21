@@ -1,1 +1,1 @@
-include ':app', ':simplerobototextview'
+include ':app'
