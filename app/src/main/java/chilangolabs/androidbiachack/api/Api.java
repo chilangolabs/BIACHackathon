@@ -1,7 +1,9 @@
 package chilangolabs.androidbiachack.api;
 
 import android.content.Context;
+import android.util.ArrayMap;
 
+import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -13,6 +15,8 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.util.Map;
+
 /**
  * Created by Gorro on 20/06/16.
  */
@@ -21,6 +25,7 @@ public class Api {
     private static JsonObjectRequest jsonObjectRequest;
     private static JsonArrayRequest jsonArrayRequest;
     public static Context context;
+    public static String token;
 
     public static void initVolley(Context ctx) {
         context = ctx;
@@ -29,6 +34,14 @@ public class Api {
 
     public static RequestQueue getRequestQueue() {
         return requestQueue;
+    }
+
+    public static String getToken() {
+        return token;
+    }
+
+    public static void setToken(String tkn) {
+        token = tkn;
     }
 
     public static void registerUser(final Context ctx, JSONObject jsonUser, final OnRequestListenerListener l) {
@@ -57,7 +70,14 @@ public class Api {
             public void onErrorResponse(VolleyError error) {
                 l.OnError(error);
             }
-        });
+        }) {
+            @Override
+            public Map<String, String> getHeaders() throws AuthFailureError {
+                Map<String, String> headers = new ArrayMap<>();
+                headers.put("token", getToken());
+                return headers;
+            }
+        };
         getRequestQueue().add(jsonObjectRequest);
     }
 
@@ -72,7 +92,36 @@ public class Api {
             public void onErrorResponse(VolleyError error) {
                 l.OnError(error);
             }
-        });
+        }) {
+            @Override
+            public Map<String, String> getHeaders() throws AuthFailureError {
+                Map<String, String> headers = new ArrayMap<>();
+                headers.put("token", getToken());
+                return headers;
+            }
+        };
+        getRequestQueue().add(jsonObjectRequest);
+    }
+
+    public static void requestAmbulance(final Context ctx, JSONObject jsonUser, final OnRequestListenerListener l) {
+        jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, "", jsonUser, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                l.OnSucces(response);
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                l.OnError(error);
+            }
+        }) {
+            @Override
+            public Map<String, String> getHeaders() throws AuthFailureError {
+                Map<String, String> headers = new ArrayMap<>();
+                headers.put("token", getToken());
+                return headers;
+            }
+        };
         getRequestQueue().add(jsonObjectRequest);
     }
 

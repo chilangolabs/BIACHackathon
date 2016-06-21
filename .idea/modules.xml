@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidBIACHack.iml" filepath="$PROJECT_DIR$/AndroidBIACHack.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simplerobototextview/simplerobototextview.iml" filepath="$PROJECT_DIR$/simplerobototextview/simplerobototextview.iml" />
     </modules>
   </component>
 </project>
