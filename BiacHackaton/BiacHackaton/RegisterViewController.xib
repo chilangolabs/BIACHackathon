@@ -7,6 +7,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="BiacHackaton" customModuleProvider="target">
             <connections>
+                <outlet property="emailField" destination="gwK-Sj-agO" id="JQt-SA-2dl"/>
+                <outlet property="lastField" destination="iUb-Hd-hUc" id="Qh0-62-TAZ"/>
+                <outlet property="nameField" destination="mJ2-4T-Bsb" id="QVu-Yd-Rmz"/>
+                <outlet property="passwordField" destination="Wg1-Jh-kAr" id="MFf-of-ZVt"/>
+                <outlet property="phoneField" destination="RuF-UE-sBq" id="CJu-bR-tRH"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="viewEmail" destination="nvz-eL-R02" id="UM1-r2-d9h"/>
                 <outlet property="viewLastName" destination="zQW-uz-CZf" id="aZH-PX-9PB"/>
@@ -61,10 +66,10 @@
                                     <rect key="frame" x="51" y="3" width="1" height="33"/>
                                     <color key="backgroundColor" red="0.0" green="0.2627450980392157" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
                                 </view>
-                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nombre(s)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mJ2-4T-Bsb">
-                                    <rect key="frame" x="60" y="5" width="189" height="30"/>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="rod" placeholder="Nombre(s)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mJ2-4T-Bsb">
+                                    <rect key="frame" x="60" y="5" width="237" height="30"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                 </textField>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -79,10 +84,10 @@
                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ImgContact" translatesAutoresizingMaskIntoConstraints="NO" id="E7D-Lv-fqx">
                                     <rect key="frame" x="8" y="11" width="36" height="18"/>
                                 </imageView>
-                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Apellidos" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iUb-Hd-hUc">
-                                    <rect key="frame" x="61" y="5" width="189" height="30"/>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="lara" placeholder="Apellidos" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iUb-Hd-hUc">
+                                    <rect key="frame" x="61" y="5" width="236" height="30"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                 </textField>
                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PAY-Bf-CRn">
                                     <rect key="frame" x="52" y="3" width="1" height="33"/>
@@ -98,10 +103,10 @@
                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ImgPhone" translatesAutoresizingMaskIntoConstraints="NO" id="Y9l-bg-uAo">
                                     <rect key="frame" x="8" y="11" width="36" height="18"/>
                                 </imageView>
-                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Telefono celular" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RuF-UE-sBq">
-                                    <rect key="frame" x="61" y="5" width="189" height="30"/>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="5514789646" placeholder="Telefono celular" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RuF-UE-sBq">
+                                    <rect key="frame" x="61" y="5" width="236" height="30"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
                                 </textField>
                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4vQ-iz-ANV">
                                     <rect key="frame" x="52" y="3" width="1" height="33"/>
@@ -117,10 +122,10 @@
                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ImgEmail" translatesAutoresizingMaskIntoConstraints="NO" id="AiW-xK-Wqq">
                                     <rect key="frame" x="8" y="11" width="36" height="18"/>
                                 </imageView>
-                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Correo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gwK-Sj-agO">
-                                    <rect key="frame" x="61" y="5" width="189" height="30"/>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="rod+lara2@gmail.com" placeholder="Correo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gwK-Sj-agO">
+                                    <rect key="frame" x="61" y="5" width="236" height="30"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES"/>
                                 </textField>
                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nPE-x8-zFz">
                                     <rect key="frame" x="52" y="3" width="1" height="33"/>
@@ -136,10 +141,10 @@
                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ImgPass" translatesAutoresizingMaskIntoConstraints="NO" id="qMv-3A-otD">
                                     <rect key="frame" x="8" y="11" width="36" height="18"/>
                                 </imageView>
-                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wg1-Jh-kAr">
-                                    <rect key="frame" x="61" y="5" width="189" height="30"/>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wg1-Jh-kAr">
+                                    <rect key="frame" x="61" y="5" width="236" height="30"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                 </textField>
                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6hA-Nj-yN8">
                                     <rect key="frame" x="52" y="3" width="1" height="33"/>
@@ -232,7 +237,7 @@
                 <constraint firstAttribute="trailing" secondItem="Qgc-ej-A9V" secondAttribute="trailing" id="rXz-Gp-St5"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-            <point key="canvasLocation" x="254" y="355"/>
+            <point key="canvasLocation" x="253.5" y="354.5"/>
         </view>
     </objects>
     <resources>

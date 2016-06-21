@@ -36,6 +36,10 @@
 		5B49525C1D19833000DA69BD /* APIWarning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4952591D19832F00DA69BD /* APIWarning.swift */; };
 		5B49525E1D1986FA00DA69BD /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B49525D1D1986FA00DA69BD /* APIError.swift */; };
 		5B4952611D19887100DA69BD /* NSErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4952601D19887100DA69BD /* NSErrorExtension.swift */; };
+		5B49526C1D19A69000DA69BD /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B49526B1D19A68F00DA69BD /* SwiftyJSON.swift */; };
+		5B49526E1D19A72E00DA69BD /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B49526D1D19A72E00DA69BD /* UIViewControllerExtension.swift */; };
+		5B49527F1D19B12A00DA69BD /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B49527D1D19B12A00DA69BD /* ProfileTableViewCell.swift */; };
+		5B4952801D19B12A00DA69BD /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B49527E1D19B12A00DA69BD /* ProfileTableViewCell.xib */; };
 		5C5802C497ABEA1B6E4BFC10 /* libPods-BiacHackaton.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3E7A401FDA62196BFFBD59 /* libPods-BiacHackaton.a */; };
 		DA805F6FD465B169CB457041 /* libPods-BiacHackatonUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DFBD3FE4C6E0F9B1EF9677E /* libPods-BiacHackatonUITests.a */; };
 /* End PBXBuildFile section */
@@ -97,6 +101,10 @@
 		5B49525D1D1986FA00DA69BD /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		5B4952601D19887100DA69BD /* NSErrorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSErrorExtension.swift; sourceTree = "<group>"; };
 		5B4952651D1995BA00DA69BD /* BiacHackaton-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BiacHackaton-Bridging-Header.h"; sourceTree = "<group>"; };
+		5B49526B1D19A68F00DA69BD /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		5B49526D1D19A72E00DA69BD /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		5B49527D1D19B12A00DA69BD /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTableViewCell.swift; path = Cell/ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		5B49527E1D19B12A00DA69BD /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProfileTableViewCell.xib; path = Cell/ProfileTableViewCell.xib; sourceTree = "<group>"; };
 		6DFBD3FE4C6E0F9B1EF9677E /* libPods-BiacHackatonUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BiacHackatonUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8DCBA82A83D1E0C7A971F4D /* Pods-BiacHackatonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiacHackatonUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BiacHackatonUITests/Pods-BiacHackatonUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D01C9F91EAF9DC520CAAEF82 /* Pods-BiacHackatonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiacHackatonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BiacHackatonTests/Pods-BiacHackatonTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -184,6 +192,8 @@
 		5B4951FE1D18BD6200DA69BD /* BiacHackaton */ = {
 			isa = PBXGroup;
 			children = (
+				5B49527C1D19B0E600DA69BD /* Cell */,
+				5B49526B1D19A68F00DA69BD /* SwiftyJSON.swift */,
 				5B49525F1D19879800DA69BD /* Extension */,
 				5B4952561D19831C00DA69BD /* Model */,
 				5B4951FF1D18BD6200DA69BD /* AppDelegate.swift */,
@@ -244,8 +254,18 @@
 			isa = PBXGroup;
 			children = (
 				5B4952601D19887100DA69BD /* NSErrorExtension.swift */,
+				5B49526D1D19A72E00DA69BD /* UIViewControllerExtension.swift */,
 			);
 			name = Extension;
+			sourceTree = "<group>";
+		};
+		5B49527C1D19B0E600DA69BD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5B49527D1D19B12A00DA69BD /* ProfileTableViewCell.swift */,
+				5B49527E1D19B12A00DA69BD /* ProfileTableViewCell.xib */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,6 +390,7 @@
 				5B4952441D19628300DA69BD /* ProfilesViewController.xib in Resources */,
 				5B4952341D18C64E00DA69BD /* LoginViewController.xib in Resources */,
 				5B4952401D1933C100DA69BD /* HomeViewController.xib in Resources */,
+				5B4952801D19B12A00DA69BD /* ProfileTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,7 +541,9 @@
 				5B4952541D197E8100DA69BD /* Server.swift in Sources */,
 				5B49525A1D19833000DA69BD /* APIErrorCodes.swift in Sources */,
 				5B4952611D19887100DA69BD /* NSErrorExtension.swift in Sources */,
+				5B49527F1D19B12A00DA69BD /* ProfileTableViewCell.swift in Sources */,
 				5B49523F1D1933C100DA69BD /* HomeViewController.swift in Sources */,
+				5B49526E1D19A72E00DA69BD /* UIViewControllerExtension.swift in Sources */,
 				5B4952521D19761000DA69BD /* BTNavigationDropdownMenu.swift in Sources */,
 				5B4952331D18C64E00DA69BD /* LoginViewController.swift in Sources */,
 				5B49525B1D19833000DA69BD /* APIResponse.swift in Sources */,
@@ -528,6 +551,7 @@
 				5B4952001D18BD6200DA69BD /* AppDelegate.swift in Sources */,
 				5B49525C1D19833000DA69BD /* APIWarning.swift in Sources */,
 				5B49524B1D1962D100DA69BD /* FirstAidViewController.swift in Sources */,
+				5B49526C1D19A69000DA69BD /* SwiftyJSON.swift in Sources */,
 				5B4952371D18CBBF00DA69BD /* InitViewController.swift in Sources */,
 				5B4952431D19628300DA69BD /* ProfilesViewController.swift in Sources */,
 				5B49522F1D18C63E00DA69BD /* RegisterViewController.swift in Sources */,

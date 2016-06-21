@@ -20,4 +20,8 @@ class SettingsViewController: UIViewController {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
+  
+  override func viewWillAppear(animated: Bool) {
+    self.title = "Configuración"
+  }
 }

@@ -17,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     
     // Override point for customization after application launch.
+    
+    UINavigationBar.appearance().tintColor = UIColor(red: 244/255, green: 67/255, blue: 54/255, alpha: 1.0) /* #f44336 */
+    
     self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
     
     let initViewController = InitViewController(nibName: "InitViewController", bundle: nil)
