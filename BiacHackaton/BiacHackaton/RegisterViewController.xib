@@ -213,6 +213,9 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YqC-zR-540">
                     <rect key="frame" x="152" y="577" width="70" height="70"/>
                     <state key="normal" image="ImgNext"/>
+                    <connections>
+                        <action selector="registerAction" destination="-1" eventType="touchUpInside" id="9qL-7v-geJ"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>

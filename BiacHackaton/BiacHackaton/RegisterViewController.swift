@@ -38,12 +38,20 @@ class RegisterViewController: UIViewController {
   
   @IBAction func registerAction() {
     let homeViewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
+    homeViewController.tabBarItem = UITabBarItem(title: "Emergencia", image: UIImage(named: "ImgEmergency"), tag: 0)
+    
     let profilesViewController = ProfilesViewController(nibName: "ProfilesViewController", bundle: nil)
+    profilesViewController.tabBarItem = UITabBarItem(title: "Perfiles", image: UIImage(named: "ImgProfiles"), tag: 1)
+    
     let firstAidViewController = FirstAidViewController(nibName: "FirstAidViewController", bundle: nil)
+    firstAidViewController.tabBarItem = UITabBarItem(title: "Primeros auxilios", image: UIImage(named: "ImgFirstAid"), tag: 2)
+    
     let settingsViewController = SettingsViewController(nibName: "SettingsViewController", bundle: nil)
+    settingsViewController.tabBarItem = UITabBarItem(title: "Configuración", image: UIImage(named: "ImgSettings"), tag: 3)
     
     let tabBarController = UITabBarController()
     tabBarController.viewControllers = [homeViewController, profilesViewController, firstAidViewController, settingsViewController]
+    tabBarController.tabBar.tintColor = UIColor(red: 54/255, green: 54/255, blue: 54/255, alpha: 1.0) /* #363636 */
     
     UIApplication.sharedApplication().delegate?.window??.rootViewController = tabBarController
   }

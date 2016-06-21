@@ -7,17 +7,47 @@
 //
 
 import UIKit
+import CoreLocation
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, CLLocationManagerDelegate {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+  @IBOutlet weak var viewDropDown: UIView!
+  
+  let menuItems = ["REVISTAS", "LIBROS", "CÓMICS", "PERIÓDICOS"]
+  var menuView: BTNavigationDropdownMenu!
+  
+  var locationManager: CLLocationManager!
 
-        // Do any additional setup after loading the view.
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    self.initLocation()
+  }
+  
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+  }
+  
+  func initLocation() {
+    locationManager = CLLocationManager()
+    locationManager.delegate = self
+    locationManager.desiredAccuracy = kCLLocationAccuracyBest
+    locationManager.requestAlwaysAuthorization()
+    //    locationManager.startMonitoringSignificantLocationChanges()
+    locationManager.startUpdatingLocation()
+  }
+  
+  private func setupMenuSection() {
+    menuView = BTNavigationDropdownMenu(title: menuItems[0], items: menuItems)
+    menuView.cellTextLabelFont = UIFont(name: "GothamNarrow-Bold", size: 15)
+    //    menuView.didSelectItemAtIndexHandler!(indexPath: publicationType! - 1)
+    
+    menuView.didSelectItemAtIndexHandler = {(indexPath: Int) -> () in
+      //      print("Did select item at index: \(indexPath)")
+      //      self.menuView.setMenuTitle(self.menuItems[indexPath])
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
+    self.navigationItem.titleView = menuView
+  }
 }

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07B4B4001FA190BC8B693F58 /* Pods_BiacHackaton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D500E186C38BE03AE2F77690 /* Pods_BiacHackaton.framework */; };
+		2C52FF5A664E9C7C9C6CF30E /* libPods-BiacHackatonTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00AF7D5FBCEE0D24D03D021F /* libPods-BiacHackatonTests.a */; };
 		5B4952001D18BD6200DA69BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4951FF1D18BD6200DA69BD /* AppDelegate.swift */; };
 		5B4952071D18BD6200DA69BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B4952061D18BD6200DA69BD /* Assets.xcassets */; };
 		5B4952151D18BD6300DA69BD /* BiacHackatonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4952141D18BD6300DA69BD /* BiacHackatonTests.swift */; };
@@ -27,8 +27,17 @@
 		5B4952481D1962A200DA69BD /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B4952461D1962A200DA69BD /* SettingsViewController.xib */; };
 		5B49524B1D1962D100DA69BD /* FirstAidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4952491D1962D100DA69BD /* FirstAidViewController.swift */; };
 		5B49524C1D1962D100DA69BD /* FirstAidViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B49524A1D1962D100DA69BD /* FirstAidViewController.xib */; };
-		7A518ADAEDE4D6E295832E8E /* Pods_BiacHackatonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F38AE630668D508D4F5472E /* Pods_BiacHackatonTests.framework */; };
-		E23E4CE0CCBC3A61D31F6DA1 /* Pods_BiacHackatonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 376F3C3A1326314C190E632A /* Pods_BiacHackatonUITests.framework */; };
+		5B49524E1D19718400DA69BD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B49524D1D19718400DA69BD /* MapKit.framework */; };
+		5B4952501D19718F00DA69BD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B49524F1D19718F00DA69BD /* CoreLocation.framework */; };
+		5B4952521D19761000DA69BD /* BTNavigationDropdownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4952511D19761000DA69BD /* BTNavigationDropdownMenu.swift */; };
+		5B4952541D197E8100DA69BD /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4952531D197E8100DA69BD /* Server.swift */; };
+		5B49525A1D19833000DA69BD /* APIErrorCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4952571D19832F00DA69BD /* APIErrorCodes.swift */; };
+		5B49525B1D19833000DA69BD /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4952581D19832F00DA69BD /* APIResponse.swift */; };
+		5B49525C1D19833000DA69BD /* APIWarning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4952591D19832F00DA69BD /* APIWarning.swift */; };
+		5B49525E1D1986FA00DA69BD /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B49525D1D1986FA00DA69BD /* APIError.swift */; };
+		5B4952611D19887100DA69BD /* NSErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4952601D19887100DA69BD /* NSErrorExtension.swift */; };
+		5C5802C497ABEA1B6E4BFC10 /* libPods-BiacHackaton.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3E7A401FDA62196BFFBD59 /* libPods-BiacHackaton.a */; };
+		DA805F6FD465B169CB457041 /* libPods-BiacHackatonUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DFBD3FE4C6E0F9B1EF9677E /* libPods-BiacHackatonUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,9 +58,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00AF7D5FBCEE0D24D03D021F /* libPods-BiacHackatonTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BiacHackatonTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06A6AB6E770F1E4EF76AECFF /* Pods-BiacHackaton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiacHackaton.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BiacHackaton/Pods-BiacHackaton.debug.xcconfig"; sourceTree = "<group>"; };
 		1DB650BFB58118AD2F5E0F7D /* Pods-BiacHackaton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiacHackaton.release.xcconfig"; path = "Pods/Target Support Files/Pods-BiacHackaton/Pods-BiacHackaton.release.xcconfig"; sourceTree = "<group>"; };
-		376F3C3A1326314C190E632A /* Pods_BiacHackatonUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BiacHackatonUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C3E7A401FDA62196BFFBD59 /* libPods-BiacHackaton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BiacHackaton.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B4951FC1D18BD6200DA69BD /* BiacHackaton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiacHackaton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B4951FF1D18BD6200DA69BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B4952061D18BD6200DA69BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -77,10 +87,19 @@
 		5B4952461D1962A200DA69BD /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		5B4952491D1962D100DA69BD /* FirstAidViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstAidViewController.swift; sourceTree = "<group>"; };
 		5B49524A1D1962D100DA69BD /* FirstAidViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstAidViewController.xib; sourceTree = "<group>"; };
-		7F38AE630668D508D4F5472E /* Pods_BiacHackatonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BiacHackatonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B49524D1D19718400DA69BD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5B49524F1D19718F00DA69BD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5B4952511D19761000DA69BD /* BTNavigationDropdownMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTNavigationDropdownMenu.swift; sourceTree = "<group>"; };
+		5B4952531D197E8100DA69BD /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		5B4952571D19832F00DA69BD /* APIErrorCodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIErrorCodes.swift; sourceTree = "<group>"; };
+		5B4952581D19832F00DA69BD /* APIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		5B4952591D19832F00DA69BD /* APIWarning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIWarning.swift; sourceTree = "<group>"; };
+		5B49525D1D1986FA00DA69BD /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		5B4952601D19887100DA69BD /* NSErrorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSErrorExtension.swift; sourceTree = "<group>"; };
+		5B4952651D1995BA00DA69BD /* BiacHackaton-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BiacHackaton-Bridging-Header.h"; sourceTree = "<group>"; };
+		6DFBD3FE4C6E0F9B1EF9677E /* libPods-BiacHackatonUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BiacHackatonUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8DCBA82A83D1E0C7A971F4D /* Pods-BiacHackatonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiacHackatonUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BiacHackatonUITests/Pods-BiacHackatonUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D01C9F91EAF9DC520CAAEF82 /* Pods-BiacHackatonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiacHackatonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BiacHackatonTests/Pods-BiacHackatonTests.release.xcconfig"; sourceTree = "<group>"; };
-		D500E186C38BE03AE2F77690 /* Pods_BiacHackaton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BiacHackaton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E541275E2B53DAB4B65AC3CA /* Pods-BiacHackatonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiacHackatonUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BiacHackatonUITests/Pods-BiacHackatonUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F13EA490BA51EB4FA0D4565D /* Pods-BiacHackatonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiacHackatonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BiacHackatonTests/Pods-BiacHackatonTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,7 +109,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07B4B4001FA190BC8B693F58 /* Pods_BiacHackaton.framework in Frameworks */,
+				5B4952501D19718F00DA69BD /* CoreLocation.framework in Frameworks */,
+				5B49524E1D19718400DA69BD /* MapKit.framework in Frameworks */,
+				5C5802C497ABEA1B6E4BFC10 /* libPods-BiacHackaton.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A518ADAEDE4D6E295832E8E /* Pods_BiacHackatonTests.framework in Frameworks */,
+				2C52FF5A664E9C7C9C6CF30E /* libPods-BiacHackatonTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E23E4CE0CCBC3A61D31F6DA1 /* Pods_BiacHackatonUITests.framework in Frameworks */,
+				DA805F6FD465B169CB457041 /* libPods-BiacHackatonUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,9 +137,11 @@
 		0ECF07474BBFFDED71104B42 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D500E186C38BE03AE2F77690 /* Pods_BiacHackaton.framework */,
-				7F38AE630668D508D4F5472E /* Pods_BiacHackatonTests.framework */,
-				376F3C3A1326314C190E632A /* Pods_BiacHackatonUITests.framework */,
+				5B49524F1D19718F00DA69BD /* CoreLocation.framework */,
+				5B49524D1D19718400DA69BD /* MapKit.framework */,
+				4C3E7A401FDA62196BFFBD59 /* libPods-BiacHackaton.a */,
+				00AF7D5FBCEE0D24D03D021F /* libPods-BiacHackatonTests.a */,
+				6DFBD3FE4C6E0F9B1EF9677E /* libPods-BiacHackatonUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -161,24 +184,29 @@
 		5B4951FE1D18BD6200DA69BD /* BiacHackaton */ = {
 			isa = PBXGroup;
 			children = (
+				5B49525F1D19879800DA69BD /* Extension */,
+				5B4952561D19831C00DA69BD /* Model */,
 				5B4951FF1D18BD6200DA69BD /* AppDelegate.swift */,
 				5B4952061D18BD6200DA69BD /* Assets.xcassets */,
+				5B4952511D19761000DA69BD /* BTNavigationDropdownMenu.swift */,
+				5B4952491D1962D100DA69BD /* FirstAidViewController.swift */,
+				5B49524A1D1962D100DA69BD /* FirstAidViewController.xib */,
+				5B49523D1D1933C100DA69BD /* HomeViewController.swift */,
+				5B49523E1D1933C100DA69BD /* HomeViewController.xib */,
 				5B49520B1D18BD6200DA69BD /* Info.plist */,
-				5B49522D1D18C63E00DA69BD /* RegisterViewController.swift */,
-				5B49522E1D18C63E00DA69BD /* RegisterViewController.xib */,
-				5B4952311D18C64E00DA69BD /* LoginViewController.swift */,
-				5B4952321D18C64E00DA69BD /* LoginViewController.xib */,
 				5B4952351D18CBBF00DA69BD /* InitViewController.swift */,
 				5B4952361D18CBBF00DA69BD /* InitViewController.xib */,
 				5B49523B1D18EEC500DA69BD /* LaunchScreen.xib */,
-				5B49523D1D1933C100DA69BD /* HomeViewController.swift */,
-				5B49523E1D1933C100DA69BD /* HomeViewController.xib */,
+				5B4952311D18C64E00DA69BD /* LoginViewController.swift */,
+				5B4952321D18C64E00DA69BD /* LoginViewController.xib */,
 				5B4952411D19628300DA69BD /* ProfilesViewController.swift */,
 				5B4952421D19628300DA69BD /* ProfilesViewController.xib */,
+				5B49522D1D18C63E00DA69BD /* RegisterViewController.swift */,
+				5B49522E1D18C63E00DA69BD /* RegisterViewController.xib */,
+				5B4952531D197E8100DA69BD /* Server.swift */,
 				5B4952451D1962A200DA69BD /* SettingsViewController.swift */,
 				5B4952461D1962A200DA69BD /* SettingsViewController.xib */,
-				5B4952491D1962D100DA69BD /* FirstAidViewController.swift */,
-				5B49524A1D1962D100DA69BD /* FirstAidViewController.xib */,
+				5B4952651D1995BA00DA69BD /* BiacHackaton-Bridging-Header.h */,
 			);
 			path = BiacHackaton;
 			sourceTree = "<group>";
@@ -199,6 +227,25 @@
 				5B4952211D18BD6300DA69BD /* Info.plist */,
 			);
 			path = BiacHackatonUITests;
+			sourceTree = "<group>";
+		};
+		5B4952561D19831C00DA69BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5B49525D1D1986FA00DA69BD /* APIError.swift */,
+				5B4952571D19832F00DA69BD /* APIErrorCodes.swift */,
+				5B4952581D19832F00DA69BD /* APIResponse.swift */,
+				5B4952591D19832F00DA69BD /* APIWarning.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5B49525F1D19879800DA69BD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5B4952601D19887100DA69BD /* NSErrorExtension.swift */,
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -470,14 +517,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B4952541D197E8100DA69BD /* Server.swift in Sources */,
+				5B49525A1D19833000DA69BD /* APIErrorCodes.swift in Sources */,
+				5B4952611D19887100DA69BD /* NSErrorExtension.swift in Sources */,
 				5B49523F1D1933C100DA69BD /* HomeViewController.swift in Sources */,
+				5B4952521D19761000DA69BD /* BTNavigationDropdownMenu.swift in Sources */,
 				5B4952331D18C64E00DA69BD /* LoginViewController.swift in Sources */,
+				5B49525B1D19833000DA69BD /* APIResponse.swift in Sources */,
 				5B4952471D1962A200DA69BD /* SettingsViewController.swift in Sources */,
 				5B4952001D18BD6200DA69BD /* AppDelegate.swift in Sources */,
+				5B49525C1D19833000DA69BD /* APIWarning.swift in Sources */,
 				5B49524B1D1962D100DA69BD /* FirstAidViewController.swift in Sources */,
 				5B4952371D18CBBF00DA69BD /* InitViewController.swift in Sources */,
 				5B4952431D19628300DA69BD /* ProfilesViewController.swift in Sources */,
 				5B49522F1D18C63E00DA69BD /* RegisterViewController.swift in Sources */,
+				5B49525E1D1986FA00DA69BD /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,13 +655,17 @@
 			baseConfigurationReference = 06A6AB6E770F1E4EF76AECFF /* Pods-BiacHackaton.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BiacHackaton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.oecd.BiacHackaton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "BiacHackaton/BiacHackaton-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -616,13 +674,16 @@
 			baseConfigurationReference = 1DB650BFB58118AD2F5E0F7D /* Pods-BiacHackaton.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BiacHackaton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.oecd.BiacHackaton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "BiacHackaton/BiacHackaton-Bridging-Header.h";
 			};
 			name = Release;
 		};

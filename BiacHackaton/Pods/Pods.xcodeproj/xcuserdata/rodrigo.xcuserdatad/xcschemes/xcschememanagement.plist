@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-BiacHackaton.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>A7D99EA4137BB31CC2813CA66E07732C</key>
+		<key>2602F3D0DAC534568B6AD7EEA0DD1959</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CBA4B3A575F74BB52CB52A9C5EC5D41E</key>
+		<key>9F0AD2BED73174499F504565C44E0497</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F3E163116B318BE394C5D1C48CDCC192</key>
+		<key>B47B93B147EC4B2C83AAB468D7435C18</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D69FD31C8797703EA1286E8E9F495D57</key>
 		<dict>
 			<key>primary</key>
 			<true/>
