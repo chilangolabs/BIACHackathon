@@ -1,4 +1,9 @@
 {
+  "jwt": {
+    "algorithm": "HS512",
+    "secret": "q6P&@5=,1X:-[TXOKc%F|TJMhNj7g[O.oZ)R`dO<{h)|#xN|Zy&kmej|=|)j9y7!"
+  },
+
   "middleware": {
     "static": {
       "module": {
