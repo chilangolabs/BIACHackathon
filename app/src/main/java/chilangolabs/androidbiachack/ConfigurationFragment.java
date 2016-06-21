@@ -13,16 +13,15 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
-import chilangolabs.androidbiachack.adapters.ViewPagerAdapter;
+import chilangolabs.androidbiachack.adapters.ViewPagerRegisterAdapter;
 import chilangolabs.androidbiachack.api.Api;
-import layout.Cuestionario;
 
 
 public class ConfigurationFragment extends Fragment {
 
     TabLayout tabLayout;
     ViewPager viewPager;
-    ViewPagerAdapter viewPagerAdapter;
+    ViewPagerRegisterAdapter viewPagerAdapter;
 
     public ConfigurationFragment() {
         // Required empty public constructor
@@ -44,7 +43,7 @@ public class ConfigurationFragment extends Fragment {
         fragmentList.add(new Cuestionario());
         fragmentList.add(new Cuestionario());
 
-        viewPagerAdapter = new ViewPagerAdapter(getActivity().getSupportFragmentManager(), fragmentList);
+        viewPagerAdapter = new ViewPagerRegisterAdapter(getChildFragmentManager(), fragmentList);
         viewPager.setAdapter(viewPagerAdapter);
 
         tabLayout.addTab(tabLayout.newTab().setText("ID 1"));

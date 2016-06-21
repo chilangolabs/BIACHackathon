@@ -1,4 +1,4 @@
-package layout;
+package chilangolabs.androidbiachack;
 
 
 import android.os.Bundle;
